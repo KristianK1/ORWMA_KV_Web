@@ -4,10 +4,27 @@ body{
 		border: 10px solid #000000;
 }
 
-h1{
+header{
 	text-align: center;
+	  position: relative;
 }
-
+h1{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	transform: translate(0%, -20%);
+	/*text-align:center;*/
+	font-size: 100px;
+}
+header,img{
+	width:98%;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: auto;
+	display: block;
+	opacity: 0.8;
+	border-radius: 20px 20px 20px 20px;
+}
 .navigation{
 	margin: 10px 30px 10px 30px;
 	height: 60px;
@@ -93,3 +110,30 @@ h1{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #AC0000;}
 
+article{
+	width:70%;
+	margin: 20px 20px 20px 20px;
+	text-align: justify;
+}
+aside{
+	width:30%;
+	margin: 20px 20px 20px 20px;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+.footer_tablica{
+	width:90%;
+	border: 2px solid #000000;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:10px;
+}
