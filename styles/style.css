@@ -1,0 +1,95 @@
+body{
+		background-color: #8B8B8B;
+		margin: 15px 100px 15px 100px;
+		border: 10px solid #000000;
+}
+
+h1{
+	text-align: center;
+}
+
+.navigation{
+	margin: 10px 30px 10px 30px;
+	height: 60px;
+	border: 1px solid #000000;
+	background-color:#808080;
+}
+
+.linkovi{
+	float: left;
+	background-color: #4C5BFB;
+	color: #000000;
+	padding: 10px 10px;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px 10px 10px 10px;
+	margin: 10px 5px 10px 5px;
+	height: 20px;
+	text-align: center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.linkovi:hover{
+	background-color: #AC0000;
+}
+
+.ikona img{
+	float:right;
+	width: 40px;
+	height: 40px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 12px 12px 12px 12px;
+}
+
+.dropbtn {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+	background-color: #4C5BFB;
+	color: #000000;
+	padding: 16px;
+	font-size: 20px;
+	border: none;
+	padding: 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	margin: 10px 5px 10px 5px;
+	text-transform: uppercase;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	float: left;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	
+	margin: 0px 15px 0px 15px;
+	display: none;
+	position: absolute;
+	background-color: #898989;
+	min-width: 105px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.95);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-size:13px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	margin: 6px 6px 6px 6px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #AC0000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #AC0000;}
+
