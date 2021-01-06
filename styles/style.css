@@ -145,22 +145,24 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;/*repeat*/
-	grid-gap:1%;
+	grid-gap: 15px;
 	margin: 10px 10px 10px 10px;
 }
 
-.kontejner > div { 
-	border-radius: 5px; 
-	padding: 5px; 
+.kontejner > div {
+
+	padding: 0px 0px; 
 	background-color: #75587D; 
 	text-align: justify;
 	max-height:250px;
 }
 
 .naslov{
+	border-bottom: 2px solid #000000;
+	position:relative;
+	width: 94%;
 	font-size: 1.5em;
-	width: 90%;
-	padding: 1% 3%;
+	padding: 2% 3%;
 	text-align: justify;
 	background-color:#4F0064;
 	color: #C8C8C8;
@@ -172,15 +174,15 @@ body {
 }
 .slika_vijesti{
 	width:45%;
-	margin: 1% 1% 1% 1%;
+	margin: 1% 1% 1% 2%;
 }
 .text_vijesti{
-	margin: 1% 1% 1% 1%;
+	margin: 1% 3% 3% 3%;
 	padding: 1% 1%;
 	float: right;
-	width: 47%;
+	width: 45%;
 	max-width:47%;
-	height:65%;
+	height:63%;
 	max-height:65%;
 	overflow: hidden;
 }
