@@ -86,23 +86,40 @@ namespace Aplikacija_za_unosenje_vijesti
 
             String path;
             path = "..//..//..//..//Skeletons//standard_news_short.html";
+            
             String news_short = Load_file(path);
+            
+            int number = news_short.LastIndexOf("<!--KRAJ vijesti-->"); // Character to remove "?"
+            if (number > 0)
+                news_short = news_short.Substring(0, number); // This will remove all text after character ?
 
+
+            //Console.WriteLine(news_short);
             String timestamp = timestamp_get();
             news_short=news_short.Replace("<!-- INSERT NEWS TITLE -->", name);
             news_short = news_short.Replace("<!-- INSERT SHORT DESCRIPTION -->", short_des);
             news_short = news_short.Replace("<!-- INSERT TIME STAMP -->", timestamp);
             news_short = news_short.Replace("<!-- INSERT IMAGE NAME -->", image_name);
-            Console.WriteLine(news_short);
+            //Console.WriteLine(news_short);
+            //MessageBox.Show(news_short, "Upozorenje");
+
             path = "..//..//..//..//index.html";
             String index = Load_file(path);
-            news_short = "< !--INSERT NEW NEWS -->" + news_short;
+            int n = 7+ index.LastIndexOf("</html>"); // Character to remove "?"
+            if (n > 7)
+                index = index.Substring(0, n); // This will remove all text after character ?
+
+
+
+
+            //Console.WriteLine(index);
+            news_short = "<!-- INSERT NEW NEWS -->" + news_short;
             index=index.Replace("<!-- INSERT NEW NEWS -->", news_short);
 
-            Console.WriteLine(index);
+            Save_file(path, index);
         }
 
-        String timestamp_get()
+        private String timestamp_get()
         {
             int GGGG = DateTime.Now.Year;
             int MM = DateTime.Now.Month;
@@ -136,14 +153,13 @@ namespace Aplikacija_za_unosenje_vijesti
                 {
                     String_file += temp.GetString(b);
                 }
-                //MessageBox.Show(String_file, "Upozorenje");
             }
+            Console.WriteLine(String_file.Length);
             return String_file;
         }
 
-        private String Save_file(String path, String file)
+        private void Save_file(String path, String file)
         {
-            MessageBox.Show(path, "Upozorenje");
             using (FileStream fs = File.Open(path, FileMode.Open, FileAccess.Write, FileShare.None))
             {
                 Byte[] info = new UTF8Encoding(true).GetBytes(file);

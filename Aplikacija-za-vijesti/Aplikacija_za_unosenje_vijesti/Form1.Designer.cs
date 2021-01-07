@@ -46,7 +46,7 @@
             this.news_title_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.news_title_text.Multiline = true;
             this.news_title_text.Name = "news_title_text";
-            this.news_title_text.Size = new System.Drawing.Size(171, 23);
+            this.news_title_text.Size = new System.Drawing.Size(171, 40);
             this.news_title_text.TabIndex = 0;
             // 
             // short_des_text
@@ -55,7 +55,7 @@
             this.short_des_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.short_des_text.Multiline = true;
             this.short_des_text.Name = "short_des_text";
-            this.short_des_text.Size = new System.Drawing.Size(689, 83);
+            this.short_des_text.Size = new System.Drawing.Size(689, 92);
             this.short_des_text.TabIndex = 0;
             // 
             // long_des_text
@@ -69,7 +69,7 @@
             // 
             // image_name_text
             // 
-            this.image_name_text.Location = new System.Drawing.Point(35, 159);
+            this.image_name_text.Location = new System.Drawing.Point(35, 168);
             this.image_name_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.image_name_text.Name = "image_name_text";
             this.image_name_text.Size = new System.Drawing.Size(171, 20);
@@ -98,7 +98,7 @@
             // 
             this.image_name_label.AutoSize = true;
             this.image_name_label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.image_name_label.Location = new System.Drawing.Point(31, 138);
+            this.image_name_label.Location = new System.Drawing.Point(31, 147);
             this.image_name_label.Name = "image_name_label";
             this.image_name_label.Size = new System.Drawing.Size(70, 19);
             this.image_name_label.TabIndex = 1;
