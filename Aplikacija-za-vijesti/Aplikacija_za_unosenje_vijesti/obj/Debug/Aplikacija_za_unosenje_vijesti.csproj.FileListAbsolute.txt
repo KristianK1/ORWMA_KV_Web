@@ -1,0 +1,9 @@
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\bin\Debug\Aplikacija_za_unosenje_vijesti.exe.config
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\bin\Debug\Aplikacija_za_unosenje_vijesti.exe
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\bin\Debug\Aplikacija_za_unosenje_vijesti.pdb
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.csprojAssemblyReference.cache
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.Form1.resources
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.Properties.Resources.resources
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.csproj.GenerateResource.cache
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.exe
+C:\Users\Kristian\Desktop\Red_feniksa\Osnove_razvoja\Vjezbanje RWA\ORWMA_KV_Web\Aplikacija-za-vijesti\Aplikacija_za_unosenje_vijesti\obj\Debug\Aplikacija_za_unosenje_vijesti.pdb
