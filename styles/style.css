@@ -164,6 +164,9 @@ body {
 	background-color:#4F0064;
 	color: #C8C8C8;
 }
+.naslov>a{
+	color:#C8C8C8;
+}
 .time_stamp{
 	font-size:0.9em;
 	width:30%;

@@ -57,10 +57,10 @@ namespace Aplikacija_za_unosenje_vijesti
             timestamp_get(ref timestamp_page , ref timestamp_file_name);
 
             //SHORT NEWS
-            Short_news(name, short_des, long_des, image_name, timestamp_page);
-            
-            //LONG NEWS
+            Short_news(name, short_des, long_des, image_name, timestamp_page, timestamp_file_name);
 
+            //LONG NEWS
+            Long_news(timestamp_file_name, name, short_des, long_des, image_name, timestamp_page);
 
 
             //String news_file_name = DateTime.Now.Year.ToString() +"_"+ DateTime.Now.Month.ToString() + "_" + DateTime.Now.Day.ToString() + "_" +DateTime.Now.Hour.ToString() + "_" + DateTime.Now.Minute.ToString() + "_" + name.Replace(" ","_") + ".html";
@@ -107,12 +107,33 @@ namespace Aplikacija_za_unosenje_vijesti
             footer_file = footer_file.Replace("<!-- TITLE TAB -->", "Vijest");
             new_file += footer_file;
 
+            Console.WriteLine(new_file);
+
+            StreamWriter fs=null;
+            int exist = 1;
+
+            while (1 == exist)
+            {
+                if (File.Exists("..//..//..//..//news//" + timestamp_file_name))
+                {
+                    timestamp_file_name = timestamp_file_name.Replace(".html", "_1.html");
+                }
+                else
+                {
+                    exist = 0;
+                }
+                if (exist == 0)
+                {
+                    fs=File.CreateText("..//..//..//..//news//" + timestamp_file_name);
+                }
+            }
+            fs.Close();
             Save_file("..//..//..//..//news//"+ timestamp_file_name, new_file);
 
         }
 
 
-        private void Short_news(String name, String short_des, String long_des, String image_name, String timestamp_page)
+        private void Short_news(String name, String short_des, String long_des, String image_name, String timestamp_page, String timestamp_file_name)
         {
             String path;
             path = "..//..//..//..//Skeletons//standard_news_short.html";
@@ -126,6 +147,7 @@ namespace Aplikacija_za_unosenje_vijesti
 
 
             news_short = news_short.Replace("<!-- INSERT NEWS TITLE -->", name);
+            news_short = news_short.Replace("<!-- INSERT FILE NAME -->", timestamp_file_name);
             news_short = news_short.Replace("<!-- INSERT SHORT DESCRIPTION -->", short_des);
             news_short = news_short.Replace("<!-- INSERT TIME STAMP -->", timestamp_page);
             news_short = news_short.Replace("<!-- INSERT IMAGE NAME -->", image_name);
@@ -149,32 +171,32 @@ namespace Aplikacija_za_unosenje_vijesti
             int DD = DateTime.Now.Day;
             int sat = DateTime.Now.Hour;
             int min = DateTime.Now.Minute;
-            Timestamp_page = DD.ToString() + "." + MM.ToString() + "." + GGGG.ToString() + ". " + sat.ToString() + ":" + min.ToString();
-            
+
             String MMs = MM.ToString();
             if (MM < 10)
             {
-                MMs = " " + MMs;
+                MMs = "0" + MMs;
             }
 
             String DDs = DD.ToString();
             if (DD < 10)
             {
-                DDs = " " + DDs;
+                DDs = "0" + DDs;
             }
 
             String sats= sat.ToString();
             if (sat < 10)
             {
-                sats = " " + sats;
+                sats = "0" + sats;
             }
 
             String mins = min.ToString();
             if (min < 10)
             {
-                mins = " " + mins;
+                mins = "0" + mins;
             }
-            Timestamp_page = GGGG.ToString() + "_" + MMs+ "_" + DDs + "__ " + sats + "_" + mins;
+            Timestamp_page = DDs + "." + MMs + "." + GGGG.ToString() + ". " + sats + ":" + mins;
+            Timestamp_file_name = GGGG.ToString() + "_" + MMs+ "_" + DDs + "__" + sats + "_" + mins + ".html";
         }
 
 
@@ -192,8 +214,8 @@ namespace Aplikacija_za_unosenje_vijesti
                 {
                     String_file += temp.GetString(b);
                 }
+                fs.Close();
             }
-            Console.WriteLine(String_file.Length);
             return String_file;
         }
 
