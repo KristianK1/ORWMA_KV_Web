@@ -1,7 +1,7 @@
 body{
 		background-color: #8B8B8B;
 		margin: 15px 100px 15px 100px;
-		border: 1px solid #000000;
+		/*border: 1px solid #000000;*/
 }
 
 header{
@@ -251,6 +251,75 @@ header {
 .long-new-ogranici-sirinu>section>article:nth-of-type(2){
 	width:46%;
 }
+.long-new-ogranici-sirinu>section>article:nth-of-type(2)>img{
+	width:100%;
+}
 .long-new-ogranici-sirinu>section>article:nth-of-type(3){
 	width:94%;
-}*/
+}
+
+
+.zidni_sat_img{
+	width:98%;
+	padding:1%;
+}
+.zidni_sat_dolje{
+	padding-left: 20px;
+}
+
+
+.iksoks_dolje{
+	
+	padding-left: 20px;
+}
+
+
+
+.biografija{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+
+.biografija>img:nth-of-type(1){
+	width:30%;
+}
+.biografija>section{
+	width:20%;
+}
+
+.biografija>img:nth-of-type(2){
+	width:45%;
+}
+
+
+.room_lighting{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+
+.room_lighting>img:nth-of-type(1){
+	width:30%;
+}
+.room_lighting>section{
+	width:25%;
+}
+
+.room_lighting>img:nth-of-type(2){
+	width:40%;
+}
+
+
+.pgolf{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+
+.pgolf>img{
+	width:70%;
+}
+.pgolf>section{
+	width:25%;
+}
